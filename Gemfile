@@ -33,6 +33,9 @@ end
 # Include nokogiri
 gem 'nokogiri'
 
+# Includes duck-duck-go
+gem 'duck-duck-go'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
