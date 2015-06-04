@@ -3,6 +3,11 @@
  - Ruby version - ruby 2.1.1p76
  - Rails version - 4.1.0
 
+* How to Run
+ - cd <project-directory>
+ - bundle install
+ - rail s
+
 * Notes
  - Uses gem Nokogiri for HTML scraping and duck-duck-go to access duck-duck-go api
  - API Query for to fetch topic summary was straight forward. 
