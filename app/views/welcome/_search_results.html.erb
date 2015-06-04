@@ -1,0 +1,15 @@
+<div class='results'>
+  <% @results.each do |result| %>
+    <div class='result'>
+      <h2 class="result-title">
+        <%= link_to result.main_text, result.main_url, { class: "result-a" } %>
+      </h2>
+      <div class="result-description">
+        <%= result.description %>
+      </div>
+      <div class="result-bottom-url">
+        <%= result.bottom_url %>
+      </div>
+    </div>
+  <% end if !is_topic_summary? %>
+</div>

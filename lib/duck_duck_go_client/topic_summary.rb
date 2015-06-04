@@ -13,8 +13,24 @@ module DuckDuckGoClient
       @ia = OBJ.zeroclickinfo(query)
     end
     
+    def abstract_url
+      @ia.abstract_url
+    end
+    
     def valid?
-      true
+      @ia.type.eql?('A')
+    end
+    
+    def first_url
+      @ia.results.first.first_url
+    end
+    
+    def image
+      @ia.image.to_s
+    end
+    
+    def abstract_image_url
+      
     end
   end
 end
