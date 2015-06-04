@@ -1,7 +1,7 @@
-== README
 
-* Ruby version - ruby 2.1.1p76 
-* Rails version - 4.1.0
+* Environemnt
+ - Ruby version - ruby 2.1.1p76
+ - Rails version - 4.1.0
 
 * Notes
  - Uses gem Nokogiri for HTML scraping and duck-duck-go to access duck-duck-go api
