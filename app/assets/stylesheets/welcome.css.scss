@@ -297,3 +297,103 @@ a {
   height: 1em;
   width: 0;
 }
+
+
+
+/* CSS for Search Results */
+.web-result, .zero-click-result {
+  border: 1px solid transparent;
+}
+.results_links {
+  padding-left: 5px;
+}
+.results_links_deep {
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fcfcfc;
+}
+.results_links, .results_zero_click, .results_disambig, .results_links_more, .results_category_more, .results_disambig_more {
+  clear: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fcfcfc;
+}
+.icon_fav, .icon_fav2, .icon_category, .icon_disambig {
+  float: left;
+  display: none;
+}
+.links_main {
+  text-align: left;
+  margin-left: 30px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.links_deep, .links_main, .links_more {
+  font-size: 83.3%;
+}
+.links_deep, .links_main, .links_more {
+  font-size: 83.3%;
+}
+a:visited {
+  color: #6830bb;
+}
+a {
+  text-decoration: none;
+  color: #1168cc;
+}
+input, body, a, select, #special_page_header, #zero_click_header, #search_form_input, #bang {
+  font-family: "Helvetica Neue","Segoe UI","Nimbus Sans L","Liberation Sans","Open Sans",FreeSans,Arial,sans-serif;
+}
+.icon_fav img, .icon_category img {
+  padding-top: 5px;
+}
+.icon_fav img, .icon_fav2 img {
+  width: 16px;
+  height: 16px;
+}
+.icon_fav img, .icon_fav2 img, .icon_category img, .icon_disambig img {
+  visibility: hidden;
+}
+img {
+  display: block;
+  -ms-interpolation-mode: bicubic;
+}
+fieldset, img {
+  border: 0;
+}
+.links_main {
+  text-align: left;
+  margin-left: 30px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.links_deep, .links_main, .links_more {
+  font-size: 83.3%;
+}
+.links_deep, .links_main, .links_more {
+  font-size: 83.3%;
+}
+a.large {
+  font-size: 128.6%;
+}
+a:visited {
+  color: #6830bb;
+}
+a {
+  text-decoration: none;
+  color: #1168cc;
+}
+.snippet {
+  font-size: 92.8%;
+}
+.snippet, .snippet a {
+  clear: both;
+  line-height: 1.4;
+  color: #333!important;
+  text-decoration: none!important;
+}
+.url, .url a {
+  color: #781900!important;
+  font-size: 92.8%;
+}

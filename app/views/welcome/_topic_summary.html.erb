@@ -1,27 +1,29 @@
-<div class="zci  zci--about is-active" id="zci-about">
-  <div class="cw has-aux">
-    <div class="zci__main  c-info">
-      <div class="zci__body">
-        <div class="c-info__img-wrap  c-info__img-wrap--tile">
-          <a href="<%= @results.abstract_url %>" class="c-info__img-wrap__in">
-            <img class="c-info__img  js-sized-img" src="<%= @results.image %>" style="width: auto; height: auto;">
-          </a>
-        </div>
-        <div class="c-info__body">
-          <h1 class="c-info__title  ">
-            <a href="https://en.wikipedia.org/wiki/BlackBerry" title="<%= @results.heading %>"><%= @results.heading %></a>
-          </h1>
-          <div class="c-info__content chomp js-ellipsis"><%= @results.abstract %> </div>
-          <div class="c-info__links ">
-            <a href="<%= @results.abstract_url %>" class="c-info__link">
-              More at <%= @results.abstract_source %>
+<% if is_topic_summary? %>
+  <div class="zci  zci--about is-active" id="zci-about">
+    <div class="cw has-aux">
+      <div class="zci__main  c-info">
+        <div class="zci__body">
+          <div class="c-info__img-wrap  c-info__img-wrap--tile">
+            <a href="<%= @results.abstract_url %>" class="c-info__img-wrap__in">
+              <img class="c-info__img  js-sized-img" src="<%= @results.image %>" style="width: auto; height: auto;">
             </a>
-            <a class="c-info__link  c-info__link--url" href="<%= @results.first_url %>">
-              <span class="sep  c-info__links__sep"></span><%= @results.first_url.host %>
-            </a>
+          </div>
+          <div class="c-info__body">
+            <h1 class="c-info__title  ">
+              <a href="https://en.wikipedia.org/wiki/BlackBerry" title="<%= @results.heading %>"><%= @results.heading %></a>
+            </h1>
+            <div class="c-info__content chomp js-ellipsis"><%= @results.abstract %> </div>
+            <div class="c-info__links ">
+              <a href="<%= @results.abstract_url %>" class="c-info__link">
+                More at <%= @results.abstract_source %>
+              </a>
+              <a class="c-info__link  c-info__link--url" href="<%= @results.first_url %>">
+                <span class="sep  c-info__links__sep"></span><%= @results.first_url.host %>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+<% end %>

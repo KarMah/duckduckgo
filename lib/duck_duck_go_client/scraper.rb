@@ -20,7 +20,8 @@ module DuckDuckGoClient
     end
 
     def url_query
-      "?q=#{@query}&ia=meanings"
+      "?q=#{@query}&ia=about&iax=1&kl=us-en"
+#       "?q=#{@query}&ia=meanings"
     end
 
     def url

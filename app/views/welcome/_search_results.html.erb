@@ -1,15 +1,13 @@
 <div class='results'>
   <% @results.each do |result| %>
-    <div class='result'>
-      <h2 class="result-title">
-        <%= link_to result.main_text, result.main_url, { class: "result-a" } %>
-      </h2>
-      <div class="result-description">
-        <%= result.description %>
-      </div>
-      <div class="result-bottom-url">
-        <%= result.bottom_url %>
+    <div class="results_links results_links_deep web-result">
+      <div class="links_main links_deep"> <!-- This is the visible part -->
+        <a rel="nofollow" class="large" href="<%= result.main_url %>">
+          <%= result.main_text %>
+        </a>
+        <div class="snippet"><%= result.description %></div>
+        <div class="url"><%= result.bottom_url %></div>
       </div>
     </div>
-  <% end if !is_topic_summary? %>
+  <% end if !is_topic_summary? && @results.present? %>
 </div>
